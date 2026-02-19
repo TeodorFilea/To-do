@@ -1,4 +1,4 @@
-To-Do Pro Ultra - Cloud Sync
+To-Do 
 
 O aplicație modernă de gestionare a sarcinilor, disponibilă atât ca site web, cât și ca extensie de browser, cu sincronizare în timp real prin Firebase.
 
