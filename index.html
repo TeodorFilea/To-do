@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Pro Ultra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="themeToggle">🌙</button>
+        <h1>To-Do Pro</h1>
+        
+        <input type="text" id="searchInput" placeholder="Caută un task...">
+
+        <div class="input-row">
+            <input type="text" id="taskInput" placeholder="Ce facem azi?">
+            <input type="datetime-local" id="dateInput">
+        </div>
+        
+        <div class="input-group">
+            <select id="prioritySelect">
+                <option value="low">Scăzută</option>
+                <option value="medium" selected>Medie</option>
+                <option value="high">Ridicată</option>
+            </select>
+            <button id="addBtn">Adaugă</button>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-filter="all">Toate</button>
+            <button class="tab-btn" data-filter="active">Active</button>
+            <button class="tab-btn" data-filter="completed">Terminate</button>
+        </div>
+
+        <ul id="taskList"></ul>
+        
+        <button id="clearBtn">Șterge tot</button>
+    </div>
+
+    <script type="module" src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
